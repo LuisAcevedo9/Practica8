@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package herenciaabstracta;
+
+import java.text.DecimalFormat;
+public  class HerenciaAbstracta{
+    public static void main (String args[]){
+        DecimalFormat dosDigitos= new DecimalFormat ( " 0 . 0 0 " ) ;
+        //Crear objetos Punto , Circulo y Cilindro
+        Punto punto = new Punto ( 7 , 1 1 ) ;
+        Circulo circulo = new Circulo(22 , 8 , 3 . 5 ) ;
+        Cilindro cilindro = new Cilindro(20 , 30 , 3 . 3 , 1 0 . 7 5 ) ;
+        // Obtener nombre y representacion de cadena de cada objeto
+        System.out.println("Nombre y representacion de cadena : " ) ;
+        System.out.println(punto.obtenerNombre()+" : " +punto+ "\n" + circulo.obtenerNombre()+" : "+ circulo+"\n"+ cilindro.obtenerNombre()+" : "+cilindro+ "\n " ) ;
+        // Crear un arreglo de Figuras
+        Figura arregloDeFiguras[] = new Figura [3];
+        // Apuntar arregloDeFiguras[0] al objeto de la subcl a s e Punto
+        arregloDeFiguras[0]=punto;
+        // Apuntar arregloDeFiguras[1] a l o bj e t o de l a s u b cl a s e Punto
+a r r egloD eFi g u ra s [ 1 ] = c i r c u l o ;
+// Apuntar a r r e gloD eFig u ra s [ 0 ] a l o bj e t o de l a s u b cl a s e Punto
+a r r egloD eFi g u ra s [ 2 ] = c i l i n d r o ;
+// i t e r a r a t r a v e s d el a r r e g l o para o b t e n e r nombre ,
+// r e p r e s e n t a c i o n de cadena , a r ea y volumen de cada
+// Figu ra en e l a r r e g l o .
+System . out . p r i n t l n ("\ nNombre e i n v o c a ci o n e s : " ) ;
+f o r ( i n t i = 0 ; i < a r r e gloD eFi g u ra s . l e ng t h ; i ++){
+System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . obtenerNombre ( ) ) ;
+System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . t o S t r i n g ( ) ) ;
+System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . ob tene rA rea ( ) ) ;
+System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . obtenerVolumen ( ) ) ;
+System . out . p r i n t l n ("\ n " ) ;
+}
+}
+}
