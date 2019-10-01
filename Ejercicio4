@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package herenciaabstracta;
-
 import java.text.DecimalFormat;
 public  class HerenciaAbstracta{
     public static void main (String args[]){
-        DecimalFormat dosDigitos= new DecimalFormat ( " 0 . 0 0 " ) ;
+        DecimalFormat dosDigitos= new DecimalFormat ( "0.0 0 " ) ;
         //Crear objetos Punto , Circulo y Cilindro
         Punto punto = new Punto ( 7 , 1 1 ) ;
         Circulo circulo = new Circulo(22 , 8 , 3 . 5 ) ;
@@ -20,20 +13,20 @@ public  class HerenciaAbstracta{
         Figura arregloDeFiguras[] = new Figura [3];
         // Apuntar arregloDeFiguras[0] al objeto de la subcl a s e Punto
         arregloDeFiguras[0]=punto;
-        // Apuntar arregloDeFiguras[1] a l o bj e t o de l a s u b cl a s e Punto
-a r r egloD eFi g u ra s [ 1 ] = c i r c u l o ;
-// Apuntar a r r e gloD eFig u ra s [ 0 ] a l o bj e t o de l a s u b cl a s e Punto
-a r r egloD eFi g u ra s [ 2 ] = c i l i n d r o ;
-// i t e r a r a t r a v e s d el a r r e g l o para o b t e n e r nombre ,
-// r e p r e s e n t a c i o n de cadena , a r ea y volumen de cada
-// Figu ra en e l a r r e g l o .
-System . out . p r i n t l n ("\ nNombre e i n v o c a ci o n e s : " ) ;
-f o r ( i n t i = 0 ; i < a r r e gloD eFi g u ra s . l e ng t h ; i ++){
-System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . obtenerNombre ( ) ) ;
-System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . t o S t r i n g ( ) ) ;
-System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . ob tene rA rea ( ) ) ;
-System . out . p r i n t l n ( a r r egloD eFi g u ra s [ i ] . obtenerVolumen ( ) ) ;
-System . out . p r i n t l n ("\ n " ) ;
-}
-}
+        // Apuntar arregloDeFiguras[1] alobjeto de la subclase Punto
+        arregloDeFiguras[1] = circulo;
+        //Apuntar arregloDeFiguras [0] al objeto de la subclase Punto
+        arregloDeFiguras[2] = cilindro;
+        //iterar atraves del arreglo para obtener nombre ,
+        //representacion de cadena, area y volumen de cada
+        // Figura en el arreglo.
+        System.out.println ("\n Nombre e invocaciones: " ) ;
+        for (int i = 0 ; i < arregloDeFiguras.length ; i ++){
+            System.out.println (arregloDeFiguras[i].obtenerNombre());
+            System.out.println(arregloDeFiguras[i].toString());
+            System.out.println(arregloDeFiguras[i].obtenerArea());
+            System.out.println(arregloDeFiguras[i].obtenerVolumen());
+            System.out.println("\n");
+        }
+    }
 }
