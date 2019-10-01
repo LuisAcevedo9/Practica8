@@ -1,11 +1,11 @@
 import java.text.DecimalFormat;
 public  class HerenciaAbstracta{
     public static void main (String args[]){
-        DecimalFormat dosDigitos= new DecimalFormat ( "0.0 0 " ) ;
+        DecimalFormat dosDigitos= new DecimalFormat ("0.00") ;
         //Crear objetos Punto , Circulo y Cilindro
-        Punto punto = new Punto ( 7 , 1 1 ) ;
-        Circulo circulo = new Circulo(22 , 8 , 3 . 5 ) ;
-        Cilindro cilindro = new Cilindro(20 , 30 , 3 . 3 , 1 0 . 7 5 ) ;
+        Punto punto = new Punto (7,11);
+        Circulo circulo = new Circulo(22,8,3.5) ;
+        Cilindro cilindro = new Cilindro(20,30,3.3,10.75);
         // Obtener nombre y representacion de cadena de cada objeto
         System.out.println("Nombre y representacion de cadena : " ) ;
         System.out.println(punto.obtenerNombre()+" : " +punto+ "\n" + circulo.obtenerNombre()+" : "+ circulo+"\n"+ cilindro.obtenerNombre()+" : "+cilindro+ "\n " ) ;
